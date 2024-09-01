@@ -24,7 +24,7 @@ public class AppController {
         return LocalDateTime.now();
     }
 
-    @GetMapping("/students")
+    @GetMapping(path = "/students")
     public List<Student> students() {
         return studentRepository.findAll();
     }
