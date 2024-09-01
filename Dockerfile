@@ -1,7 +1,5 @@
-# Add a new user "john" with user id 8877
-RUN useradd -u 8877 dinesh
-# Change to non-root privilege
-USER dinesh
+RUN useradd -m myuser
+USER myuser
 # For Java 8, try this
 # FROM openjdk:8-jdk-alpine
 
