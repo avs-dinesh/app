@@ -6,7 +6,7 @@
 FROM adoptopenjdk/openjdk21:alpine-jre
 
 # Refer to Maven build -> finalName
-ARG JAR_FILE=target/spring-boot-web.jar
+ARG JAR_FILE=target/app.jar
 
 # cd /opt/app
 WORKDIR /opt/app
